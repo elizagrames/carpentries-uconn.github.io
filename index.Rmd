@@ -1,0 +1,27 @@
+---
+title: "Carpentries - UConn"
+author: "Timothy E. Moore"
+graphics: yes
+output:
+  prettydoc::html_pretty:
+    theme: cerulean
+    highlight: github
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## The Carpentries at the University of Connecticut
+
+[The Carpentries]("https://carpentries.org/") is an international organization that offers two-day workshops that emphasize using best practices for engaging in reproducible data analysis. A typical workshop will introduce learners to the command line, version control, computer programming, and data hygeine. Our Software Carpentry and Data Carpentry workshops following curricula that are developed collaboratively and using the latest research into best practices for teaching computer science content. All of our workshops are offered for free to learners. We strive to foster a growth mindset in learners by hosting an inclusive learning environment with instructors who are representative of our learners.
+
+If you are interested in learning more about taking one of our upcoming workshops or would like to learn how to host a workshop for your department or program feel free to contact us with any questions. If you have already participated in a workshop or are interested in helping to teach a workshop, please let us know by completing a brief survey
+Join Us!
+
+We are a group of students, postdoc, staff, and faculty who are committed to building a community of excellence at the University of Michigan around the area of reproducible data analysis. As a Carpentries Partner Organization, we use two day Software Carpentry and Data Carpentry workshops to help members of the University of Michigan community to grow in their computer programming skills. From these workshops we seek to build a community of excellence by training people to become workshop helpers and instructors. Also, we continue to engage learners by offering specialty workshops that go deeper into content or explore topics not covered by the typical Carpentries workshops.
+
+
