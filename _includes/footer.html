@@ -1,0 +1,29 @@
+<div class="footer">
+
+	<div class="container-fluid">
+		<div class="row  vertical-align">
+			<div class="col-md-6 address">
+				<h4>Contact:</h4>
+				<p>The University of Connecticut</p>
+			</div>
+			<div class="col-md-6">
+				<div class="copy pull-right">
+					<p>UM Software Carpentry &copy {{ site.time | date: '%Y' }}</p>
+					<p>
+						<a href="mailto:{{ site.email }}">
+							<i class="far fa-envelope fa-lg" style="color:white"></i>
+						</a>
+						<a href="https://github.com/{{ site.github_username }}">
+							<i class="fab fa-github fa-lg" style="color:white"></i>
+						</a>
+					</p>
+					{% if page.attribution != nil %}
+						<p class="attribution">
+							<a href={{page.attribution.link_to_image}}>Original background image</a> from {{page.attribution.author }} under <a href="{{page.attribution.license_link}}">{{page.attribution.license}} license</a>
+						</p>
+					{% endif %}
+				</div>
+			</div>
+	    </div>
+ 	</div>
+</div>
