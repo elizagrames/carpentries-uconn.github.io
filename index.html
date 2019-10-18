@@ -4,8 +4,28 @@ layout: default
 
 <!--{% include head.html %}-->
 
+<head>
+	<style>
+		a:link, a:visited {
+		  background-color: #f44336;
+		  color: white;
+		  padding: 15px 25px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+
+		a:hover, a:active {
+		  background-color: red;
+		}
+	</style>
+</head>
+
 <body>
 
+<a href="default.asp" target="_blank">This is a link</a>
+	
+<!--
 <div class="container">
   <ul class="nav nav-tabs">
 				{% if page.category != "home" %}
@@ -17,7 +37,7 @@ layout: default
 				<li><a href="lessons.html">Lessons</a></li>
   </ul>
 </div>
-
+-->
 	
 	
 <img src="pic1.jpg" alt="hi" class="inline"/>
