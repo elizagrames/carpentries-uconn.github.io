@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-<div class="header">
-	<div class="container-fluid">
-		<div class="pull-right">
-			<ul class="nav nav-tabs">
+<div class="container">
+	<ul class="nav nav-tabs">
 				{% if page.category != "home" %}
 				<li role="presentation" ><a href="{{site.baseurl}}/">Home</a></li>
 				{% endif %}
@@ -12,10 +10,9 @@ layout: default
 				<li role="presentation" {% if page.category == "team" %}class="active"{% endif %}><a href="team.html">Team</a></li>
 				<li role="presentation" {% if page.category == "support" %}class="active"{% endif %}><a href="support.html">Support</a></li>
 				<li role="presentation" {% if page.category == "lessons" %}class="active"{% endif %}><a href="lessons.html">Lessons</a></li>
-			</ul>
-		</div>
-	</div>
+	</ul>
 </div>
+
 
 
 <body>
