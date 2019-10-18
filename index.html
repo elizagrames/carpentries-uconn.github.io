@@ -4,7 +4,7 @@ layout: default
 <div class="container">
 	<ul class="nav nav-tabs">
 				{% if page.category != "home" %}
-				<li role="presentation" ><a href="{{site.baseurl}}/">Home</a></li>
+				<li><a href="{{site.baseurl}}/">Home</a></li>
 				{% endif %}
 				<li role="presentation" {% if page.category == "workshops" %}class="active"{% endif %}><a href="workshops.html">Workshops</a></li>
 				<li role="presentation" {% if page.category == "team" %}class="active"{% endif %}><a href="team.html">Team</a></li>
