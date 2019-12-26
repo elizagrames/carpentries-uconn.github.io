@@ -9,7 +9,7 @@ title: Workshops
 	  {% for workshop in site.categories.workshops %}
 			<li>
 				<div class="meta">
-					<div class="title">{{ workshop.title }}</div>
+					<div class="title"><h1>{{ workshop.title }}</h1></div> 
 					<div><b>Dates:</b> {{ workshop.date | date: "%B %d" }} and {{ workshop.end_date | date: "%B %d, %Y" }}</div>
 					<div><b>Instructors:</b> {{ workshop.instructors | join: ", "}}</div>
 					<div><b>Helpers:</b> {{ workshop.helpers | join: ", "}}</div>
