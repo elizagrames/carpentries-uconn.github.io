@@ -8,10 +8,10 @@ instructors:
 - Pariksheet Nanda
 - James Mickley
 helpers:
-- ??
+- TBD
 site: https://carpentries-uconn.github.io/2020-01-13-uconn/
 etherpad: https://pad.carpentries.org/2020-01-13-uconn
 registration: https://secure.touchnet.com/C21646_ustores/web/store_main.jsp?STOREID=133
-material: 
+material: Unix Shell, Python, Git
 audience: 
 ---
