@@ -9,12 +9,12 @@ title: Workshops
 	  {% for workshop in site.categories.workshops %}
 			<li>
 				<div class="meta">
-					<div class="title"><h2>{{ workshop.title }}</h2></div> 
-					<div><b><h5>Dates:</h5></b> {{ workshop.date | date: "%B %d" }} and {{ workshop.end_date | date: "%B %d, %Y" }}</div>
-					<div><b><h5>Instructors:</h5></b> {{ workshop.instructors | join: ", "}}</div>
-					<div><b><h5>Helpers:</h5></b> {{ workshop.helpers | join: ", "}}</div>
-					<div><b><h5>Content:</h5></b> {{ workshop.material }}</div>
-					<div><b><h5>Audience:</h5></b> {{ workshop.audience }}</div>
+					<div class="title"><h3>{{ workshop.title }}</h3></div> 
+					<div><b><b>Dates:</b></b> {{ workshop.date | date: "%B %d" }} and {{ workshop.end_date | date: "%B %d, %Y" }}</div>
+					<div><b><b>Instructors:</b></b> {{ workshop.instructors | join: ", "}}</div>
+					<div><b><b>Helpers:</b></b> {{ workshop.helpers | join: ", "}}</div>
+					<div><b><b>Content:</b></b> {{ workshop.material }}</div>
+					<div><b><b>Audience:</b></b> {{ workshop.audience }}</div>
 					<div><a href="{{workshop.site}}">More information</a></div>
 				</div>
 			</li>
