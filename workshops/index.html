@@ -10,11 +10,11 @@ title: Workshops
 			<li>
 				<div class="meta">
 					<div class="title"><h2>{{ workshop.title }}</h2></div> 
-					<div><b><h3>Dates:</h3></b> {{ workshop.date | date: "%B %d" }} and {{ workshop.end_date | date: "%B %d, %Y" }}</div>
-					<div><b><h3>Instructors:</h3></b> {{ workshop.instructors | join: ", "}}</div>
-					<div><b><h3>Helpers:</h3></b> {{ workshop.helpers | join: ", "}}</div>
-					<div><b><h3>Content:</h3></b> {{ workshop.material }}</div>
-					<div><b><h3>Audience:</h3></b> {{ workshop.audience }}</div>
+					<div><b><h5>Dates:</h5></b> {{ workshop.date | date: "%B %d" }} and {{ workshop.end_date | date: "%B %d, %Y" }}</div>
+					<div><b><h5>Instructors:</h5></b> {{ workshop.instructors | join: ", "}}</div>
+					<div><b><h5>Helpers:</h5></b> {{ workshop.helpers | join: ", "}}</div>
+					<div><b><h5>Content:</h5></b> {{ workshop.material }}</div>
+					<div><b><h5>Audience:</h5></b> {{ workshop.audience }}</div>
 					<div><a href="{{workshop.site}}">More information</a></div>
 				</div>
 			</li>
