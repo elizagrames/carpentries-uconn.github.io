@@ -10,8 +10,8 @@ instructors:
 helpers:
 - ??
 site: https://carpentries-uconn.github.io/2020-01-13-uconn/
-etherpad: https://etherpad.mozilla.org/2015-08-26-umswc
-eventbrite: 
+etherpad: https://pad.carpentries.org/2020-01-13-uconn
+registration: https://secure.touchnet.com/C21646_ustores/web/store_main.jsp?STOREID=133
 material: 
 audience: 
 ---
