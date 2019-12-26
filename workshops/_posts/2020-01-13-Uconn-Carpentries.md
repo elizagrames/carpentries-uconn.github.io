@@ -1,5 +1,5 @@
 ---
-title:  Workshop
+title:  Software Carpentry Workshop
 date: 2020-01-13
 end_date: 2020-01-14
 instructors:
