@@ -16,6 +16,6 @@ if __name__ == '__main__':
     workshops_all = get('https://feeds.carpentries.org/all_workshops.json')
     workshops = [workshop
                  for workshop in workshops_all
-                 if workshop['url'].startswith('https://carpentries-uconn')]
+                 if workshop['url'].find('https://carpentries-uconn') != -1]
     with open('_data/all_workshops.json', 'w') as handle:
         json.dump(workshops, handle, indent=2)
