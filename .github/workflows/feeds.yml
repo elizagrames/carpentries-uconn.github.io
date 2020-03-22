@@ -25,4 +25,3 @@ jobs:
           commit_user_name: Workshop Bot
           commit_user_email: actions@github.com
           commit_author: Workshop Bot <actions@github.com>
-          file_pattern: _data/\*.json
