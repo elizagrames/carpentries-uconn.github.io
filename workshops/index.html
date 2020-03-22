@@ -6,8 +6,7 @@ title: Workshops
 
 <div class="workshops">
     <table>
-	{% assign workshops = site.data.all_workshops | where_exp: "item", "item.url contains 'carpentries-uconn'" %}
-	{% for w in workshops %}
+	{% for w in site.data.all_workshops %}
 	    {% assign tags = w.tag_name | split: "," | downcase %}
 
 	    {% if tags contains "ttt" %}

@@ -1,8 +1,3 @@
 theme: jekyll-theme-slate
 title: The Carpentries at The University of Connecticut
 baseurl: ""
-plugins:
-  - jekyll-get-json
-jekyll_get_json:
-  - data: all_workshops
-    json: 'https://feeds.carpentries.org/all_workshops.json'
