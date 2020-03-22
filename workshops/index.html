@@ -5,19 +5,42 @@ title: Workshops
 ---
 
 <div class="workshops">
-	<ul>
-	  {% for workshop in site.categories.workshops %}
-			<li>
-				<div class="meta">
-					<div class="title"><h3>{{ workshop.title }}</h3></div> 
-					<div><b><b>Dates:</b></b> {{ workshop.date | date: "%B %d" }} and {{ workshop.end_date | date: "%B %d, %Y" }}</div>
-					<div><b><b>Instructors:</b></b> {{ workshop.instructors | join: ", "}}</div>
-					<div><b><b>Helpers:</b></b> {{ workshop.helpers | join: ", "}}</div>
-					<div><b><b>Content:</b></b> {{ workshop.material }}</div>
-					<div><b><b>Audience:</b></b> {{ workshop.audience }}</div>
-					<div><a href="{{workshop.site}}">More information</a></div>
-				</div>
-			</li>
-	  {% endfor %}
-	</ul>
+    <table>
+	{% assign workshops = site.data.all_workshops | where_exp: "item", "item.url contains 'carpentries-uconn'" %}
+	{% for w in workshops %}
+	    {% assign tags = w.tag_name | split: "," | downcase %}
+
+	    {% if tags contains "ttt" %}
+		{% continue %}
+	    {% elsif tags contains "swc" %}
+		{% assign workshop_type = "swc" %}
+	    {% elsif tags contains "dc" %}
+		{% assign workshop_type = "dc" %}
+	    {% elsif tags contains "lc" %}
+		{% assign workshop_type = "lc" %}
+	    {% elsif tags contains "circuits" %}
+		{% assign workshop_type = "cp" %}
+	    {% else %}
+		{% assign workshop_type = "cp-unknown" %}
+	    {% endif %}
+
+	    <tr>
+		<td>
+		    <img src="{{site.url}}/assets/img/logos/{{ workshop_type }}.svg" title="{{ workshop_type }} workshop" alt="{{ workshop_type  }} logo" width="24" height="24"/>
+		</td>
+		<td>
+		    <a href="{{w.url}}">{{w.start_date | date: "%b %-d"}} - {{w.end_date | date: "%b %-d, %Y"}}</a>
+		    {% if w.instructors %}
+			<br/>
+			<b>Instructors:</b> {{ w.instructors | replace: ",", ", "}}
+		    {% endif %}
+		    {% if w.helpers %}
+			<br/>
+			<b>Helpers:</b> {{ w.helpers  | replace: ",", ", "}}
+		    {% endif %}
+		</td>
+	    </tr>
+
+	{% endfor %}
+    </table>
 </div>
