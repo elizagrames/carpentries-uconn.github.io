@@ -1,0 +1,47 @@
+[
+  {
+    "instructors": "Pariksheet Nanda,Jeremy Teitelbaum",
+    "end_date": "2020-02-24",
+    "url": "https://carpentries-uconn.github.io/2020-02-24-uconn",
+    "country": "US",
+    "curriculum": "",
+    "venue": "University of Connecticut",
+    "longitude": -72.250114,
+    "slug": "2020-02-24-uconn",
+    "tag_name": "Circuits",
+    "helpers": null,
+    "host_name": "University of Connecticut",
+    "latitude": 41.806632,
+    "start_date": "2020-02-24"
+  },
+  {
+    "instructors": "Kendra Maas,James Mickley,Pariksheet Nanda,Timothy Moore,Cera Fisher,Jeremy Teitelbaum,Dyanna Louyakis",
+    "end_date": "2020-01-14",
+    "url": "https://carpentries-uconn.github.io/2020-01-13-uconn",
+    "country": "US",
+    "curriculum": "swc-python",
+    "venue": "University of Connecticut",
+    "longitude": -72.2,
+    "slug": "2020-01-13-uconn",
+    "tag_name": "SWC",
+    "helpers": "Mahdi Fallahi,Damir Dzafarov",
+    "host_name": "University of Connecticut",
+    "latitude": 41.8,
+    "start_date": "2020-01-13"
+  },
+  {
+    "instructors": "Kendra Maas,Pariksheet Nanda,Timothy Moore,Jeremy Teitelbaum,Renee Walsh,Artemis Louyakis",
+    "end_date": "2019-10-11",
+    "url": "https://carpentries-uconn.github.io/2019-10-10-uconn/",
+    "country": "US",
+    "curriculum": "",
+    "venue": "University of Connecticut, Storrs",
+    "longitude": -72.251826,
+    "slug": "2019-10-10-uconn",
+    "tag_name": "Circuits",
+    "helpers": "Dipanjana Dalui",
+    "host_name": "University of Connecticut",
+    "latitude": 41.806732,
+    "start_date": "2019-10-10"
+  }
+]

@@ -1,0 +1,26 @@
+name: Update and commit feeds of instructors and workshops
+
+on: push # FIXME: After testing, change "on: push" to "on: schedule" per
+         # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule
+
+jobs:
+
+  workshop-local-list:
+    name: Generate feeds of instructors and workshops
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Update feeds of instructors and workshops
+        run: |
+          python3 ./bin/feeds.py
+
+      - name: Commit any changed json files
+        # See https://github.com/stefanzweifel/git-auto-commit-action
+        uses: stefanzweifel/git-auto-commit-action@v4.1.1
+        with:
+          commit_user_name: Workshop Bot
+          commit_user_email: actions@github.com
+          commit_author: Workshop Bot <actions@github.com>
